@@ -1,6 +1,7 @@
-import jest from "jest"
-import "@testing-library/jest-dom"
 
+import "@testing-library/jest-dom"
+//Use globalThis.jest to be safe in setup file
+const j = globalThis.jest;
 Object.defineProperty(window, "localStorage", {
   value: {
     getItem: jest.fn(),
