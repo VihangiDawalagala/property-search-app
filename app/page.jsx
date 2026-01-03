@@ -127,7 +127,7 @@ export default function HomePage() {
                       <PropertyCard
                         property={property}
                         isFavourite={isFavourite(property.id)}
-                        isDraggable={false}
+                        isDraggable={true}
                         onToggleFavourite={() => toggleFavourite(property.id)}
                       />
                     </div>
@@ -142,6 +142,11 @@ export default function HomePage() {
                 favouriteIds={favouriteIds}
                 onRemove={removeFavourite}
                 onClear={clearFavourites}
+                onDropAdd={(id) => {
+                  // prevent duplicates
+                  if (!favouriteIds.includes(id)) saveFavourites([...favouriteIds, id])
+                }}
+
               />
             </aside>
           </div>

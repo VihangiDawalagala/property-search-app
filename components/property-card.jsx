@@ -2,28 +2,50 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { MapPin, BedDouble, Heart, ArrowRight } from "lucide-react"
+import { MapPin, BedDouble, Heart, ArrowRight, GripVertical } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { formatPrice, formatDate } from "@/lib/property-utils"
 
 export function PropertyCard({
   property,
-  onDragStart,
   isDraggable = false,
   isFavourite,
   onToggleFavourite,
 }) {
+  const handleDragStart = (e) => {
+    if (!isDraggable) return
+    // ✅ most compatible data type
+    e.dataTransfer.setData("text/plain", String(property.id))
+    e.dataTransfer.effectAllowed = "move"
+  }
+
   return (
     <Card
-      className="overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 cursor-move group border-border/50"
-      draggable={isDraggable}
-      onDragStart={(e) => onDragStart?.(e, property)}
+      className="overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 group border-border/50"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-        <Link href={`/property/${property.id}`}>
+      <div
+        className="relative aspect-[4/3] overflow-hidden bg-muted"
+        draggable={isDraggable}
+        onDragStart={handleDragStart}
+      >
+        {/* ✅ Drag handle (grab here) */}
+        {isDraggable && (
+          <div
+            className="absolute top-4 left-4 z-20 flex items-center gap-1 rounded-full bg-background/95 px-3 py-2 text-xs text-muted-foreground shadow-lg backdrop-blur-md"
+            draggable={true}
+            onDragStart={handleDragStart}
+            title="Drag to favourites"
+          >
+            <GripVertical className="h-4 w-4" />
+            Drag
+          </div>
+        )}
+
+        <Link href={`/property/${property.id}`} draggable={false}>
           <Image
-            src={property.images[0] || "/placeholder.svg"}
+            draggable={false}
+            src={property.images?.[0] || "/placeholder.svg"}
             alt={property.shortDescription}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -35,7 +57,7 @@ export function PropertyCard({
         <Button
           variant="secondary"
           size="icon"
-          className="absolute top-4 right-4 h-10 w-10 rounded-full bg-background/95 backdrop-blur-md hover:bg-background shadow-lg border-0 transition-all duration-300 hover:scale-110"
+          className="absolute top-4 right-4 z-20 h-10 w-10 rounded-full bg-background/95 backdrop-blur-md hover:bg-background shadow-lg border-0 transition-all duration-300 hover:scale-110"
           onClick={(e) => {
             e.preventDefault()
             e.stopPropagation()
@@ -49,7 +71,7 @@ export function PropertyCard({
           />
         </Button>
 
-        <Link href={`/property/${property.id}`}>
+        <Link href={`/property/${property.id}`} draggable={false}>
           <div className="absolute inset-x-0 bottom-0 p-4 flex items-center justify-center gap-2 text-white font-medium transition-all duration-300 opacity-0 group-hover:opacity-100">
             <span>View Details</span>
             <ArrowRight className="h-4 w-4" />
@@ -57,7 +79,7 @@ export function PropertyCard({
         </Link>
       </div>
 
-      <Link href={`/property/${property.id}`}>
+      <Link href={`/property/${property.id}`} draggable={false}>
         <CardContent className="p-5">
           <div className="mb-4">
             <h3 className="font-serif text-2xl font-bold text-primary mb-2">
