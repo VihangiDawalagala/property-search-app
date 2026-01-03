@@ -118,6 +118,17 @@ Tests cover:
 - Property look up 
 
 
+## Deployment
+
+The application is deployed using **Vercel**, a cloud platform applications.
+
+Live application URL:
+https://property-search-app-mocha.vercel.app/
+
+The deployment is connected to the GitHub repository and automatically builds and deploys the application on each push to the main branch.
+
+
+
 ## Installation
 
 1. Clone the repository
