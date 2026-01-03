@@ -34,14 +34,14 @@
     "shortDescription": "Modern 2-bedroom flat in the heart of Camden",
     "longDescription": "Situated in a sought-after development, this contemporary flat offers excellent transport links and local amenities. The open-plan living area creates a bright and spacious feel, while both bedrooms are well-proportioned. Includes one allocated parking space and communal gardens.",
     "images": [
-      "https://i.pinimg.com/1200x/8c/b6/93/8cb693616e4d9ad08b8aa71364190474.jpg",
-      "/https://i.pinimg.com/736x/cb/c0/bf/cbc0bf51f28b69c8688505b4613e4dd9.jpg",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+      "https://i.pinimg.com/736x/d5/26/b0/d526b09b72d750051b32a74675b2358c.jpg",
+      "https://i.pinimg.com/736x/cb/c0/bf/cbc0bf51f28b69c8688505b4613e4dd9.jpg",
+      "https://i.pinimg.com/1200x/be/c4/b6/bec4b692945332a663a2544d2b9c15e9.jpg",
+      "https://i.pinimg.com/736x/48/b3/5b/48b35b91ddd8b92aa07ea26f117d860c.jpg",
+      "https://i.pinimg.com/1200x/46/e9/eb/46e9ebc108d48e523826b1f9fdda1ce1.jpg",
+      "https://i.pinimg.com/1200x/86/50/60/865060badd815dd6f5078e6f753b5d03.jpg",
+      
+      "https://i.pinimg.com/1200x/db/54/49/db5449b9db71eda8231d6f1fd6476623.jpg"
     ],
     "floorPlan": "/placeholder.svg?height=800&width=600",
     "latitude": 51.539,
@@ -58,14 +58,14 @@
     "shortDescription": "Luxurious 5-bedroom townhouse in prime Westminster location",
     "longDescription": "An exceptional family home spread over four floors, this elegant townhouse combines classical architecture with high-end modern amenities. Features include a state-of-the-art kitchen, master suite with dressing room and ensuite, home office, and a private south-facing garden. Located moments from excellent schools and transport links.",
     "images": [
-      "https://i.pinimg.com/736x/6b/d5/42/6bd542313b11e05d6a6f5e13a7d11515.jpg",
+      "https://i.pinimg.com/1200x/50/9d/ce/509dce6b282b0dcc48a129e94ad4c74c.jpg",
       "https://i.pinimg.com/736x/84/86/56/8486565a46a93d7c6b72b5690680adb4.jpg",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+      "https://i.pinimg.com/1200x/aa/a0/cc/aaa0cc6a77ed0b339608931d5a431984.jpg",
+      "https://i.pinimg.com/736x/2d/4a/6b/2d4a6b87eb35b0b61003b35bfc90cbde.jpg",
+      "https://i.pinimg.com/736x/39/91/ed/3991ed129e0f38cdcf83b45a99f3ff0c.jpg",
+      "https://i.pinimg.com/1200x/fe/58/9f/fe589f0527e6f9576febd2d726781a24.jpg",
+      "https://i.pinimg.com/736x/b3/21/e2/b321e2485da40c0dde2685c3a4fdcb56.jpg",
+      "https://i.pinimg.com/1200x/72/49/70/724970608adaffe6e65519f1318e17c8.jpg"
     ],
     "floorPlan": "/placeholder.svg?height=800&width=600",
     "latitude": 51.4975,
@@ -83,13 +83,11 @@
     "longDescription": "This well-maintained one-bedroom flat offers an ideal opportunity for first-time buyers or investors. The property features a good-sized bedroom, modern bathroom, and a combined living/kitchen area. Located close to Croydon town center with excellent shopping and transport connections.",
     "images": [
       "https://i.pinimg.com/1200x/a0/a0/10/a0a010550fbedc8c454307b72a710934.jpg",
-      "https://i.pinimg.com/1200x/db/78/d6/db78d6b1667dc6acb482bb69aae79794.jpg",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+      "https://i.pinimg.com/1200x/e4/f2/2f/e4f22f5a4cb161874048bee0fe6a5825.jpg",
+      "https://i.pinimg.com/1200x/36/c6/69/36c669de09deb15d51df38931bcd278d.jpg",
+      "https://i.pinimg.com/736x/31/3f/93/313f930cc6a778dd5be1c9931fc20b50.jpg",
+      "https://i.pinimg.com/1200x/c0/88/c6/c088c64e3d23ce1793157254e1729894.jpg",
+      "https://i.pinimg.com/1200x/da/d1/a6/dad1a6fbe9658818041eb0653e13dcd8.jpg"
     ],
     "floorPlan": "/placeholder.svg?height=800&width=600",
     "latitude": 51.3762,
@@ -107,13 +105,13 @@
     "longDescription": "This impressive detached family home offers versatile accommodation arranged over two floors. Highlights include a large kitchen/breakfast room, separate dining room, conservatory, and four double bedrooms including master with ensuite. The property benefits from a substantial rear garden, driveway parking for multiple vehicles, and an integral garage.",
     "images": [
       "https://i.pinimg.com/1200x/9d/ac/82/9dac82879017c123ab6d49bcf4af9e39.jpg",
-      "https://i.pinimg.com/1200x/b6/ed/f6/b6edf6a2627a80b6f156fbb7d12d7e50.jpg",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+      "https://i.pinimg.com/736x/8f/3c/75/8f3c7551103dfb744ae74a201cbcaa5d.jpg",
+      "https://i.pinimg.com/1200x/12/91/b1/1291b139b4cb56344d5c01b70207a1cd.jpg",
+      "https://i.pinimg.com/736x/e2/5a/30/e25a30004a9f2c52a83e10ff1e88637e.jpg",
+      "https://i.pinimg.com/1200x/9e/6c/d2/9e6cd290af807e41ecf11ab96b8151dc.jpg",
+      "https://i.pinimg.com/1200x/62/0b/47/620b4759db4397baeaf48012a263d212.jpg",
+      "https://i.pinimg.com/736x/6d/d3/fe/6dd3fe4ab7587105f449b708658726ae.jpg",
+      "https://i.pinimg.com/1200x/4f/df/48/4fdf48f9f11f2ec9ebf3cf62b8aa9fb0.jpg"
     ],
     "floorPlan": "/placeholder.svg?height=800&width=600",
     "latitude": 51.513,
@@ -131,13 +129,12 @@
     "longDescription": "A stylish apartment in the heart of East London's creative quarter. This modern flat features floor-to-ceiling windows, engineered oak flooring, and a sleek fitted kitchen. Both bedrooms are doubles, and the property includes private outdoor space. Perfect for professionals seeking a vibrant urban lifestyle.",
     "images": [
       "https://i.pinimg.com/1200x/b6/d7/1f/b6d71ffbc575f0d68ffe7ca4911ad3bc.jpg",
-      "https://i.pinimg.com/736x/e1/9d/ec/e19dec4d3271fefb74d717b9f4053de4.jpg",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+      "https://i.pinimg.com/1200x/4c/7e/24/4c7e249a5ff05990196a8d99862965a6.jpg",
+      "https://i.pinimg.com/1200x/2f/51/86/2f51861a10cc71295ba5963d681d62a5.jpg",
+      "https://i.pinimg.com/1200x/04/bc/5f/04bc5f6b497317d794f335a3393e9275.jpg",
+      "https://i.pinimg.com/736x/9c/f3/ae/9cf3ae78a05c38f1ca16b20cb6f8350f.jpg",
+      
+      "https://i.pinimg.com/736x/b6/d7/fc/b6d7fcd7fd3f328d2a131df0f15729d0.jpg"
     ],
     "floorPlan": "/placeholder.svg?height=800&width=600",
     "latitude": 51.5262,
@@ -155,13 +152,11 @@
     "longDescription": "A delightful terraced house offering excellent potential to extend (subject to planning). Currently configured with two bedrooms, a through lounge/diner, and a kitchen leading to the rear garden. The property retains many original features and is conveniently located for local schools, shops, and Lewisham station.",
     "images": [
       "https://i.pinimg.com/736x/10/2b/ef/102befc939afa868f9163a5749a47da0.jpg",
-      "https://i.pinimg.com/1200x/a7/63/36/a76336ce6cdeb03e539207dc432bf076.jpg",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800"
+      "https://i.pinimg.com/1200x/d4/1a/5d/d41a5d1ad25c7fb10e04a312f6bd10a6.jpg",
+      "https://i.pinimg.com/1200x/ee/dc/fe/eedcfef7736a98b2144bf4027b37cbdb.jpg",
+      "https://i.pinimg.com/1200x/4b/f0/3a/4bf03a949ed1a189840074e9ee457564.jpg",
+      "https://i.pinimg.com/1200x/72/cd/d1/72cdd15e2d47ae4c00c3b3db39edc220.jpg",
+      "https://i.pinimg.com/736x/14/51/b2/1451b2c207a6ad1ff387e9496e67f601.jpg"
     ],
     "floorPlan": "/placeholder.svg?height=800&width=600",
     "latitude": 51.4452,
