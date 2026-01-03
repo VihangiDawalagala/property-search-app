@@ -84,6 +84,12 @@ All filters work independently and in combination.
 
 Uses CSS Grid, Flexbox, and Tailwind responsive utilities.
 
+## Image Assets
+
+Property images used in this project are loaded via external Pinterest image URLs and are used strictly as visual placeholders.
+They are not part of the submitted source code and are intended only to demonstrate layout and UI behaviour.
+In a production system, these images would be replaced with licensed or locally hosted assets.
+
 ## Security Features
 
 - Content Security Policy (CSP) headers
