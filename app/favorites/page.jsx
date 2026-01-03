@@ -26,16 +26,9 @@ export default function FavoritesPage() {
     window.addEventListener("storage", handleStorageChange)
     window.addEventListener("favouritesUpdated", handleFavouritesUpdate)
 
-    const interval = setInterval(() => {
-      if (!document.hidden) {
-        loadFavourites()
-      }
-    }, 1000)
-
     return () => {
       window.removeEventListener("storage", handleStorageChange)
       window.removeEventListener("favouritesUpdated", handleFavouritesUpdate)
-      clearInterval(interval)
     }
   }, [])
 
@@ -46,7 +39,10 @@ export default function FavoritesPage() {
       try {
         const ids = JSON.parse(saved)
         const allProps = getAllProperties()
-        const savedFavs = ids.map((id) => allProps.find((p) => p.id === id)).filter(Boolean)
+        const savedFavs = ids
+          .map((id) => allProps.find((p) => p.id === id))
+          .filter(Boolean)
+
         setFavourites(savedFavs)
       } catch (error) {
         console.error("Error loading favourites:", error)
@@ -55,11 +51,13 @@ export default function FavoritesPage() {
     } else {
       setFavourites([])
     }
+
     setIsLoading(false)
   }
 
-  const toggleFavourite = (property) => {
-    const updatedFavs = favourites.filter((f) => f.id !== property.id)
+  // ✅ FIXED: now expects an ID (because PropertyCard calls onToggleFavourite)
+  const toggleFavourite = (propertyId) => {
+    const updatedFavs = favourites.filter((f) => f.id !== propertyId)
     setFavourites(updatedFavs)
     localStorage.setItem("favourites", JSON.stringify(updatedFavs.map((f) => f.id)))
     window.dispatchEvent(new Event("favouritesUpdated"))
@@ -94,14 +92,16 @@ export default function FavoritesPage() {
         {favourites.length === 0 ? (
           <p className="text-gray-700 text-lg">You haven't added any properties to your favorites yet.</p>
         ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          // ✅ Bigger cards: 2 per row (2 then 2)
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {favourites.map((property) => (
               <PropertyCard
                 key={property.id}
                 property={property}
-                onFavouriteToggle={toggleFavourite}
                 isFavourite={true}
                 isDraggable={false}
+                // ✅ FIXED: correct prop name + pass ID
+                onToggleFavourite={() => toggleFavourite(property.id)}
               />
             ))}
           </div>
