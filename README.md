@@ -90,6 +90,12 @@ Property images used in this project are loaded via external Pinterest image URL
 They are not part of the submitted source code and are intended only to demonstrate layout and UI behaviour.
 In a production system, these images would be replaced with licensed or locally hosted assets.
 
+## Floor Plans
+
+Each property includes a floor plan image to provide additional spatial context.
+Floor plans are loaded using external image URLs as placeholders for demonstration purposes.
+
+
 ## Security Features
 
 - Content Security Policy (CSP) headers
