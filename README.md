@@ -106,7 +106,7 @@ Floor plans are loaded using external image URLs as placeholders for demonstrati
 
 ## Testing
 
-Run tests with:
+Tests can be run using:
 ```bash
 npm test
 ```
@@ -114,9 +114,9 @@ npm test
 Tests cover:
 - Property search filtering (all criteria combinations)
 - Price and date formatting
-- Favourites add/remove/clear functionality
-- Duplicate prevention
-- Form rendering and interactions
+- Combined filter scenarios and edge cases (no results)
+- Property look up 
+
 
 ## Installation
 
