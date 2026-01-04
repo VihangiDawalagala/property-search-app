@@ -4,7 +4,7 @@ This document outlines the security measures implemented in the HomeFind Propert
 
 ## Content Security Policy (CSP)
 
-The application implements CSP headers via `next.config.mjs` to prevent XSS attacks and other code injection vulnerabilities.
+The application implements CSP headers via HTML meta tags in `index.html` to prevent XSS attacks and other code injection vulnerabilities.
 
 ### CSP Directives
 
@@ -14,12 +14,11 @@ default-src 'self'
 - Only allows resources from the same origin by default
 
 ```
-script-src 'self' 'unsafe-eval' 'unsafe-inline' https://vercel.live
+script-src 'self' 'unsafe-inline' 'unsafe-eval'
 ```
 - Allows scripts from same origin
-- `unsafe-eval` required for Next.js hot reload
 - `unsafe-inline` required for React hydration
-- Vercel Live for preview deployments
+- `unsafe-eval` required for Vite development
 
 ```
 style-src 'self' 'unsafe-inline'
@@ -39,10 +38,9 @@ font-src 'self' data:
 - Allows fonts from same origin and data URLs
 
 ```
-connect-src 'self' https://vercel.live wss://ws-us3.pusher.com https://sockjs-us3.pusher.com
+connect-src 'self'
 ```
 - API calls restricted to same origin
-- Vercel Live connections for development
 
 ```
 frame-src 'self' https://www.google.com
@@ -152,8 +150,7 @@ The application doesn't use URL parameters for sensitive data, only property IDs
 ### Trusted Sources Only
 - @radix-ui components (trusted UI library)
 - Lucide React icons (official icon library)
-- Next.js and React (official packages)
-- Vercel Analytics (first-party)
+- React and Vite (official packages)
 
 ## Data Security
 
@@ -186,9 +183,9 @@ If backend is added:
 ## Image Security
 
 ### Placeholder Images
-- Uses Next.js Image component for optimization
 - All images served over HTTPS
 - No external image sources without validation
+- Images loaded via standard img tags with proper alt attributes
 
 ### User-Uploaded Content
 Not applicable - application has no upload functionality
@@ -231,7 +228,7 @@ For security concerns, please contact:
 This application follows:
 - OWASP Top 10 best practices
 - React security guidelines
-- Next.js security recommendations
+- Vite security recommendations
 - MDN Web Security guidelines
 
 ## Regular Audits
