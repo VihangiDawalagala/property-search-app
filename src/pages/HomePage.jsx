@@ -149,7 +149,7 @@ export default function HomePage() {
         </div>
 
         {/* Main 2-column layout: SearchForm (left) + Content (right) */}
-        <div className="grid lg:grid-cols-[230px_1fr] gap-4 lg:gap-6">
+        <div className="grid lg:grid-cols-[230px_1fr] gap-4 lg:gap-8">
           {/* LEFT: Search form */}
           <aside className="lg:sticky lg:top-24 h-fit animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <SearchForm onSearch={handleSearch} />
