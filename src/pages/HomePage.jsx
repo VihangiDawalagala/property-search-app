@@ -119,7 +119,7 @@ export default function HomePage() {
       stopPageScroll()
     }
 
-    // Add global drag listeners
+    // Add global drag listner
     document.addEventListener('dragstart', handleGlobalDragStart)
     document.addEventListener('dragover', handleGlobalDragOver)
     document.addEventListener('dragend', handleGlobalDragEnd)
@@ -149,14 +149,14 @@ export default function HomePage() {
         </div>
 
         {/* Main 2-column layout: SearchForm (left) + Content (right) */}
-        <div className="grid lg:grid-cols-[250px_1fr] gap-6 lg:gap-8">
+        <div className="grid lg:grid-cols-[230px_1fr] gap-4 lg:gap-6">
           {/* LEFT: Search form */}
           <aside className="lg:sticky lg:top-24 h-fit animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <SearchForm onSearch={handleSearch} />
           </aside>
 
           {/* RIGHT: split into Results + Favourites sidebar */}
-          <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
+          <div className="grid gap-6 lg:grid-cols-[1fr_240px]">
             {/* RESULTS */}
             <div className="min-h-96 min-w-0">
               <div className="mb-8 flex items-center justify-between">
@@ -199,7 +199,7 @@ export default function HomePage() {
             </div>
 
             {/* FAVOURITES SIDEBAR */}
-            <aside className="lg:sticky lg:top-24 h-fit w-full max-w-full overflow-hidden">
+            <aside className="lg:sticky lg:top-24 h-fit">
               <FavouritesSidebar
                 favouriteIds={favouriteIds}
                 onRemove={removeFavourite}

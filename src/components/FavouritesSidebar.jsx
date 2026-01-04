@@ -119,7 +119,7 @@ export default function FavouritesSidebar({
 
   return (
     <div 
-      className="rounded-2xl border border-border/50 bg-gradient-to-br from-background to-muted/20 shadow-xl p-4 w-full max-w-full backdrop-blur-sm flex flex-col h-full max-h-[calc(100vh-8rem)]"
+      className="rounded-2xl border border-border/50 bg-gradient-to-br from-background to-muted/20 shadow-xl p-4 w-full backdrop-blur-sm flex flex-col h-full max-h-[calc(100vh-8rem)]"
       onDragOver={handleSidebarDragOver}
       onDragEnter={handleSidebarDragOver}
       onDragLeave={(e) => {
