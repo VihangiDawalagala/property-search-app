@@ -137,7 +137,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="container py-8 md:py-12 px-4 md:px-6 overflow-x-hidden">
+      <main className="w-full py-8 md:py-12 overflow-x-hidden">
         {/* Hero */}
         <div className="mb-12 text-center md:text-left md:pl-8 lg:pl-12 animate-fade-in-up">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-balance text-foreground">
@@ -156,7 +156,7 @@ export default function HomePage() {
           </aside>
 
           {/* RIGHT: split into Results + Favourites sidebar */}
-          <div className="grid gap-6 lg:grid-cols-[1fr_240px]">
+          <div className="grid gap-6 lg:grid-cols-[1fr_240px]  ">
             {/* RESULTS */}
             <div className="min-h-96 min-w-0">
               <div className="mb-8 flex items-center justify-between">

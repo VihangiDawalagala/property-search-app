@@ -14,7 +14,7 @@ default-src 'self'
 - Only allows resources from the same origin by default
 
 ```
-script-src 'self' 'unsafe-inline' 'unsafe-eval'
+script-src 'self' 'unsafe-eval'
 ```
 - Allows scripts from same origin
 - `unsafe-inline` required for React hydration
@@ -190,17 +190,7 @@ If backend is added:
 ### User-Uploaded Content
 Not applicable - application has no upload functionality
 
-## Development vs Production
 
-### Development
-- More permissive CSP for hot reload
-- Source maps enabled
-- Detailed error messages
-
-### Production
-- Stricter CSP where possible
-- No source maps
-- Generic error messages
 
 ## Security Checklist
 
@@ -217,11 +207,7 @@ Not applicable - application has no upload functionality
 - [x] No sensitive data exposure
 - [x] HTTPS enforced (via deployment platform)
 
-## Reporting Security Issues
 
-For security concerns, please contact:
-- Email: security@homefind.com
-- Or open a private security advisory on GitHub
 
 ## Compliance
 
@@ -238,3 +224,12 @@ Recommended security checks:
 2. Quarterly security audits
 3. Annual penetration testing
 4. Regular CSP review and tightening
+
+## Scope of Security
+
+This application is a fully client-side Single Page Application (SPA).
+No server-side code, databases, or APIs are used.
+All data is stored locally in JSON files and browser LocalStorage.
+
+Security measures are implemented entirely on the client side, in line with
+the coursework requirement that the application must work without a server.
